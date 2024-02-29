@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This prints "bad lack" if iteration is 4 or 8 else prints "Best School"
+
+i=0
+while [ $i -lt 10 ]; do
+        if [ $i -eq 4 ]
+                echo "bad luck"
+        elif [ $i -eq 8 ]
+                echo "good luck"
+        else
+                echo "Best School"
+        fi
+        ((i++))
+done
+
