@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
-
-# Check if SSH agent is running, if not start it
+#check if SSH agent is running, if not start it
 if [ -z "$SSH_AUTH_SOCK" ] ; then
-    eval "$(ssh-agent -s)"
+    eval $("ssh-agent")
 fi
 
 # Add SSH private key to SSH agent
 ssh-add ~/.ssh/school
 
 # SSH into the server
-ssh -o StrictHostKeyChecking=no ubuntu@100.25.191.54
+ssh ubuntu@35.174.185.67
 
 # Check SSH exit status
 if [ $? -ne 0 ]; then
     echo "SSH connection failed"
     exit 1
 fi
-
