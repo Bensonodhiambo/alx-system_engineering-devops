@@ -8,7 +8,7 @@ fi
 ssh-add ~/.ssh/school
 
 # SSH into the server
-ssh ubuntu@35.174.185.67
+ssh ubuntu@100.25.191.54
 
 # Check SSH exit status
 if [ $? -ne 0 ]; then
