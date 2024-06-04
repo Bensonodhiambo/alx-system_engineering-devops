@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Customizing a 404-error_page
 
 # Updating Packages before performing installations
@@ -25,4 +26,31 @@ sudo sed -i "/server_name _/a add_header X-Served-By $HOSTNAME;" /etc/nginx/site
 sudo nginx -t
 
 # Restart nginx after implementing changes
+=======
+#configuring web-01 to have aHTTP response header
+
+#updating packages
+sudo apt-get update
+sudo apt-get install -y nginx
+
+#Creating an index page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+#performing a redirection
+new_string="server_name _;\n\trewrite ^\/redirect_me htpps:\/\/github.com\/bensonodhiambo permanent;"
+
+sudo sed -i "s/server_name _;/$new_string/"/etc/nginx/sites-enabled/default
+
+#creating custom error page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+
+#Custom HTTP response header
+
+sudo sed -i "server_name _;/a add_header X-Served_By $HOSTNAME;" /ete/nginx/sites-enabled/default
+
+#Test for syntax errors
+sudo nginx -t
+
+#Restart nginx
+>>>>>>> 4bcd6a330ab579742371b0c592eb70a6c08ff0ee
 sudo service nginx restart
