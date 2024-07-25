@@ -1,4 +1,8 @@
 0x0D. Web stack debugging #0
+<<<<<<< HEAD
+=======
+Concepts
+>>>>>>> 4d2a55544a0532c4110d9fcf382c8a8bce5262b4
 For this project, we expect you to look at these concepts:
 
 Network basics
@@ -18,6 +22,10 @@ have a file named /tmp/isworking containing the string OK
 Let’s pretend that without these 2 elements, my web application cannot work.
 
 Let’s go through this example and fix the server.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d2a55544a0532c4110d9fcf382c8a8bce5262b4
 vagrant@vagrant:~$ docker run -d -ti ubuntu:14.04
 Unable to find image 'ubuntu:14.04' locally
 14.04: Pulling from library/ubuntu
@@ -39,3 +47,38 @@ root@76f44c0da25e:/# ls /tmp/
 isworking  passwd
 root@76f44c0da25e:/#
 vagrant@vagrant:~$
+<<<<<<< HEAD
+=======
+Then my answer file would contain:
+
+sylvain@ubuntu:~$ cat answerfile
+#!/usr/bin/env bash
+# Fix my server with these magic 2 lines
+cp /etc/passwd /tmp/
+echo OK > /tmp/isworking
+sylvain@ubuntu:~$
+Note that as you cannot use interactive software such as emacs or vi in your Bash script, everything needs to be done from the command line (including file edition).
+
+Installing Docker
+For this project you will be given a container which you can use to solve the task. If you would like to have Docker so that you can experiment with it and/or solve this problem locally, you can install it on your machine, your Ubuntu 14.04 VM, or your Ubuntu 16.04 VM if you upgraded.
+
+Mac OS
+Windows
+Ubuntu 14.04 (Note that Docker for Ubuntu 14 is deprecated and you will have to make some adjustments to the instructions when installing)
+Ubuntu 16.04
+Resources
+man or help:
+
+curl
+Requirements
+General
+Allowed editors: vi, vim, emacs
+All your files will be interpreted on Ubuntu 14.04 LTS
+All your files should end with a new line
+A README.md file, at the root of the folder of the project, is mandatory
+All your Bash script files must be executable
+Your Bash scripts must pass Shellcheck without any error
+Your Bash scripts must run without error
+The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
+The second line of all your Bash scripts should be a comment explaining what is the script doing
+>>>>>>> 4d2a55544a0532c4110d9fcf382c8a8bce5262b4
