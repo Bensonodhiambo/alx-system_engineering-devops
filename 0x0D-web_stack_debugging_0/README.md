@@ -1,5 +1,8 @@
 0x0D. Web stack debugging #0
+<<<<<<< HEAD
+=======
 Concepts
+>>>>>>> 4d2a55544a0532c4110d9fcf382c8a8bce5262b4
 For this project, we expect you to look at these concepts:
 
 Network basics
@@ -19,7 +22,10 @@ have a file named /tmp/isworking containing the string OK
 Let’s pretend that without these 2 elements, my web application cannot work.
 
 Let’s go through this example and fix the server.
+<<<<<<< HEAD
+=======
 
+>>>>>>> 4d2a55544a0532c4110d9fcf382c8a8bce5262b4
 vagrant@vagrant:~$ docker run -d -ti ubuntu:14.04
 Unable to find image 'ubuntu:14.04' locally
 14.04: Pulling from library/ubuntu
@@ -41,6 +47,8 @@ root@76f44c0da25e:/# ls /tmp/
 isworking  passwd
 root@76f44c0da25e:/#
 vagrant@vagrant:~$
+<<<<<<< HEAD
+=======
 Then my answer file would contain:
 
 sylvain@ubuntu:~$ cat answerfile
@@ -73,3 +81,4 @@ Your Bash scripts must pass Shellcheck without any error
 Your Bash scripts must run without error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+>>>>>>> 4d2a55544a0532c4110d9fcf382c8a8bce5262b4
