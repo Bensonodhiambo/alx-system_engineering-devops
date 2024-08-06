@@ -3,6 +3,7 @@
 import requests
 from sys import argv
 
+
 def get_employee_todos_progress(employee_id):
     """Return the info about employees' todos progress"""
     try:
@@ -35,6 +36,7 @@ def get_employee_todos_progress(employee_id):
         print("Invalid employee ID or data format has changed.")
     except Exception as e:
         print(f"An unexpected error has occurred: {e}")
+
 
 if __name__ == "__main__":
     if len(argv) != 2:
