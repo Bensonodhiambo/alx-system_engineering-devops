@@ -25,7 +25,7 @@ def get_employee_todos_progress(employee_id):
         task_done = [task for task in json_todos_list if task['completed']]
         no_task_done = len(task_done)
 
-        """Display the results"""
+        """Disp results"""
         print(f"Employee {employee_name} is done with tasks "
               f"{no_task_done}/{total_task}:")
 
