@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ GATHER DATA FROM AN API """
 import requests
 from sys import argv
