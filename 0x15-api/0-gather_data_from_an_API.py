@@ -4,7 +4,9 @@ import requests
 from sys import argv
 """modules to work with"""
 
+
 def get_employee_todos_progress(employee_id):
+
     """A function to return the info about employees' todos progress"""
     try:
         url = "https://jsonplaceholder.typicode.com/"
@@ -37,9 +39,9 @@ def get_employee_todos_progress(employee_id):
     except Exception as e:
         print(f"An unexpected error has occurred: {e}")
 
+
 if __name__ == "__main__":
     if len(argv) != 2:
         print("Usage: script <employee_id>")
     else:
         get_employee_todos_progress(argv[1])
-
