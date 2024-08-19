@@ -1,4 +1,5 @@
- bad `phpp` extensions to `php` in the WordPress file `wp-settings.php`.
+#a puppet code that fixes a wordpress site 
+#editing bad `phpp` extensions to `php` in the WordPress file `wp-settings.php`.
 
 exec { 'fix-wordpress':
   command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
