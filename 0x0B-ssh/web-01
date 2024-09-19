@@ -9,7 +9,7 @@ fi
 ssh-add ~/.ssh/school
 
 # SSH into the server
-ssh -o StrictHostKeyChecking=no ubuntu@54.89.133.132
+ssh -o StrictHostKeyChecking=no ubuntu@54.237.35.55
 
 # Check SSH exit status
 if [ $? -ne 0 ]; then
